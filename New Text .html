@@ -1,0 +1,120 @@
+<h1>Booking Form</h1>
+
+<form>
+
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label>
+    <input type="text"
+           id="fullname"
+           name="fullname"
+           placeholder="Enter your full name"
+           required>
+
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email"
+           id="email"
+           name="email"
+           placeholder="Enter your email"
+           required>
+
+    <br><br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel"
+           id="phone"
+           name="phone"
+           placeholder="Enter your phone number"
+           required>
+
+    <br><br>
+
+    <!-- Destination -->
+    <label for="destination">Destination:</label>
+
+    <select id="destination"
+            name="destination"
+            required>
+
+        <option value="">Select destination</option>
+        <option value="amman">Amman</option>
+        <option value="dubai">Dubai</option>
+        <option value="istanbul">Istanbul</option>
+        <option value="paris">Paris</option>
+
+    </select>
+
+    <br><br>
+
+    <!-- Travel Date -->
+    <label for="date">Travel Date:</label>
+
+    <input type="date"
+           id="date"
+           name="date"
+           required>
+
+    <br><br>
+
+    <!-- Number of Travelers -->
+    <label for="travelers">Number of Travelers:</label>
+
+    <input type="number"
+           id="travelers"
+           name="travelers"
+           min="1"
+           placeholder="Number of travelers"
+           required>
+
+    <br><br>
+
+    <!-- Travel Type -->
+    <label>Travel Type:</label>
+
+    <input type="radio"
+           id="oneway"
+           name="travelType"
+           value="oneway"
+           required>
+
+    <label for="oneway">One Way</label>
+
+    <input type="radio"
+           id="roundtrip"
+           name="travelType"
+           value="roundtrip">
+
+    <label for="roundtrip">Round Trip</label>
+
+    <br><br>
+
+    <!-- Additional Notes -->
+    <label for="notes">Additional Notes:</label>
+
+    <br>
+
+    <textarea id="notes"
+              name="notes"
+              placeholder="Enter any additional notes"></textarea>
+
+    <br><br>
+
+    <!-- Terms and Conditions -->
+    <input type="checkbox"
+           id="terms"
+           name="terms"
+           required>
+
+    <label for="terms">
+        I agree to the terms and conditions
+    </label>
+
+    <br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+
+</form>
